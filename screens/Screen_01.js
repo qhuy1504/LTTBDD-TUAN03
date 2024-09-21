@@ -26,7 +26,7 @@ export default function Screen01({ navigation }) {
             width: 150,
             height: 150,
             marginLeft: 0,
-            marginTop: 50,
+            marginTop: 0,
             marginLeft: 220,
           }}
         />
@@ -35,16 +35,16 @@ export default function Screen01({ navigation }) {
       <View style={styles.style3}>
         <TouchableOpacity
           style={{
-            backgroundColor: 'green',
+            backgroundColor: 'green-white',
             borderRadius: 40,
             width: 240,
             height: 50,
-            marginTop: 50,
+            marginTop: 0,
             justifyContent: 'center',
             alignItems: 'center',
           }}
           onPress={() => navigation.navigate('Screen_02')}>
-          <Text style={{ color: 'white' }}>Go to Screen 02</Text>
+          <Text style={{ color: 'white', backgroundColor: 'green', padding: 10, borderRadius: 5 }}>Go to Screen 02</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -58,13 +58,13 @@ const styles = StyleSheet.create({
   },
   style1: {
     alignItems: 'center',
-    marginBottom: 30,
+    marginBottom: 0,
 
   },
   style2: {
     flexDirection: 'column',
     justifyContent: 'space-around',
-    marginBottom: 20,
+    marginBottom: 0,
     
   },
   style3: {
